@@ -1,18 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ananya Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    
+    body {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid #fff;
+    }
+
+    section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #ffe600;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.1);
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-5px);
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #ffe600;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #ffd400;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.2);
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
 </head>
 <body>
 
-<h1>Hello, I'm Ananya 👋</h1>
-<p>Aspiring Web Developer</p>
+  <header>
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+    <h1>Ananya Dhungana</h1>
+    <p>Aspiring Software Engineer | Web Developer | Designer</p>
+  </header>
 
-<h2>My Projects</h2>
-<p>Coming soon...</p>
+  <section>
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+    </div>
+  </section>
 
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
+  <section>
+    <h2>Contact Me</h2>
+    <a href="mailto:your.email@example.com" class="contact-btn">Say Hello</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Ananya Dhungana | Made with ❤️
+  </footer>
 
 </body>
 </html>
